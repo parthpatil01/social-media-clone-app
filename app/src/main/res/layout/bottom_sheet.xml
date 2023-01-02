@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/horizontal_line"
+        app:tint="#C9B3B3B3" />
+
+
+    <TextView
+        android:id="@+id/settings_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_settings_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/book_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_bookmark"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="Saved"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_help"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="Help"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_exit"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="Log out"
+        android:textColor="@color/red"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SocialMedia" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#5CD0D0D0</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_grey</item>
+        <item name="colorSecondaryVariant">@color/light_grey</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="PbarTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorSecondary">@color/light_grey</item>
+
+    </style>
+
+
+    <style name="Theme.SocialMedia.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SocialMedia.SplashTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+    </style>
+
+
+    <style name="Theme.AppCompat.BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Theme.AppCompat.TransparentTheme</item>
+    </style>
+
+    <style name="Theme.AppCompat.TransparentTheme" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="Theme.SocialMedia.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/blue</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/white</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">#BC0782D5</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+
+    </style>
+
+    <style name="Theme.SocialMedia.dev" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="AppSearchView" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+
+
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SocialMedia</string>
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="open_camera">Camera</string>
+</resources>
