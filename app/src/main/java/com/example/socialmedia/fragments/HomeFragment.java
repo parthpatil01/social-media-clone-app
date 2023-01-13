@@ -79,40 +79,6 @@ public class HomeFragment extends Fragment {
 
         stories.setLayoutManager(storiesLayoutManager);
 
-
-        String profile = "https://firebasestorage.googleapis.com/v0/b/social-media-14c00.appspot.com/o/POSTS%2Fparth_123%2F1653238030711?alt=media&token=99e8d79d-8522-4d68-97fb-da5eda59413f";
-        String profile1 = "https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos.jpg";
-        String profile2 = "https://img.freepik.com/free-photo/side-view-man-looking-away_23-2148749546.jpg?w=996&t=st=1668928374~exp=1668928974~hmac=103b100a869785061c0ccc6b07dbbb4887a0ceda4e5fa8a35664cc663d92e50e";
-        String profile3 = "https://myanimals.com/wp-content/uploads/2018/05/Rottweiler-2.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe";
-
-
-
-        List<String> images = new ArrayList<>();
-
-        images.add("https://wallpaperaccess.com/full/91412.jpg");
-        images.add("https://wallpapercave.com/wp/wp3862162.jpg");
-        images.add("https://iphone6papers.com/wp-content/uploads/papers.co-vy78-circle-red-simple-minimal-pattern-background-33-iphone6-wallpaper-250x444.jpg");
-
-        List<String> images1 = new ArrayList<>();
-        images1.add("https://wallpapercave.com/w/wp5525525.jpg");
-        images1.add("https://wallpapercave.com/w/wp4788551.jpg");
-
-        List<String> images2 = new ArrayList<>();
-        images2.add("https://wallpapercave.com/w/wp4861261.jpg");
-        images2.add("https://wallpapercave.com/w/wp5525528.jpg");
-
-        List<String> images3 = new ArrayList<>();
-        images3.add("https://wallpapercave.com/w/wp5139209.jpg");
-        images3.add("https://wallpapercave.com/w/wp5525539.jpg");
-        images3.add("https://wallpapercave.com/w/wp5525565.jpg");
-
-        list = new ArrayList<>();
-        list.add(new StoriesModel("parth_xy", profile, images));
-        list.add(new StoriesModel("rene", profile1, images1));
-        list.add(new StoriesModel("nulee", profile2, images2));
-        list.add(new StoriesModel("ohayooooo", profile3, images3));
-
-
         pb.setVisibility(View.GONE);
 
         LinearLayoutManager feedLayoutManager = new LinearLayoutManager(getContext());
@@ -129,28 +95,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-//        handler = new Handler();
-//        final int delay = 500; // 1000 milliseconds == 1 second
-//
-//        runnable= new Runnable() {
-//            int counter=0;
-//            public void run() {
-//                System.out.println("Home fragment handler"+" "+counter);
-//                if(!prevalentuser.usersData.isEmpty() || counter==15) {
-//
-//                    popupateFeed();
-//                    System.out.println("Home fragment handler stopped");
-//
-//                }else{
-//                    handler.postDelayed(this,delay);
-//                    counter++;
-//                }
-//            }
-//        };
-//
-//        handler.postDelayed(runnable, delay);
-
-
         StoriesAdapter adapter = new StoriesAdapter(list, getContext());
         stories.setAdapter(adapter);
 
@@ -161,7 +105,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-//        handler.removeCallbacks(runnable);
     }
 
     private void popupateFeed() {
@@ -171,39 +114,6 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager feedLayoutManager = new LinearLayoutManager(getContext());
         feedLayoutManager.setOrientation(RecyclerView.VERTICAL);
         feed.setLayoutManager(feedLayoutManager);
-
-
-//        List<UsersData> listUser = prevalentuser.usersData;
-//
-//
-//
-//        FeedAdapter feedAdapter = new FeedAdapter(listUser, getContext(), new FeedAdapter.SendToOtherUserFrag() {
-//            @Override
-//            public void send(String username) {
-//
-//                args.putString("otherUser",username);
-//                fragment.setArguments(args);
-//
-//                requireActivity().getSupportFragmentManager().beginTransaction().addToBackStack(null).
-//                        replace(R.id.homepage_framelayout, fragment).commit();
-//            }
-//        });
-
-//        for (int i = 0; i < listUser.size(); i++) {
-//
-//            UsersData ud=listUser.get(i);
-//            FirebaseUtil.snapFirebase(ud.getUsername(), new FirebaseUtil.snapInterface() {
-//                @Override
-//                public void onUpdateRetrieved(UsersData.PostData postsData) {
-//
-//                }
-//            });
-//
-//
-//        }
-
-//        feed.setAdapter(FeedAdapterUtil.getAdapter());
-//        handler.removeCallbacks(runnable);
 
 
     }
@@ -218,11 +128,3 @@ public class HomeFragment extends Fragment {
     }
 }
 
-/*
-
-
-
-
-
-
-* */
